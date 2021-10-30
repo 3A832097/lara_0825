@@ -1,7 +1,7 @@
   <!-- Page Header -->
   @extends('layouts.master')
 
-  @section('title','Clean Blog-Sample Post')
+  @section('title','Clean Blog-Contact')
 
   @section('content')
 
