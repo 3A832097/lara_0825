@@ -34,7 +34,7 @@ Route::get('about', function () {
 });
 */
 
-Route::get('index',[\App\Http\Controllers\PostsController::class,'index']);
-Route::get('post',[\App\Http\Controllers\PostsController::class,'post']);
-Route::get('about',[\App\Http\Controllers\PostsController::class,'about']);
-Route::get('contact',[\App\Http\Controllers\PostsController::class,'contact']);
+Route::get('index',[\App\Http\Controllers\PostsController::class,'index'])->name('posts.index');
+Route::get('post',[\App\Http\Controllers\PostsController::class,'post'])->name('posts.post');
+Route::get('about',[\App\Http\Controllers\PostsController::class,'about'])->name('posts.about');
+Route::get('contact',[\App\Http\Controllers\PostsController::class,'contact'])->name('posts.contact');
