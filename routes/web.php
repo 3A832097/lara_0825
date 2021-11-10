@@ -22,10 +22,16 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
+$post = Post::find(1);
+$post->update([
+    'title' => 'updated title',
+    'content' => 'updated content',
+]);
+
+/*$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
 dd($posts);
 
-/*$posts=Post::find(1);
+$posts=Post::find(1);
 dd($posts);
 
 $posts=Post::all();
