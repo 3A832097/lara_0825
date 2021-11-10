@@ -10,4 +10,10 @@ class Post extends Model
     use HasFactory;
     //多餘，可省(會自動對應)
     protected $table = 'posts';
+
+    protected $fillable = [
+        'title',
+        'content',
+        'is_feature'
+    ];
 }
