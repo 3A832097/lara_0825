@@ -22,10 +22,13 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$featuredPosts = Post::where('is_feature',1)->get();
+$fourthPost = Post::find(4);
+dd($fourthPost);
+
+/*$featuredPosts = Post::where('is_feature',1)->get();
 dd($featuredPosts);
 
-/*$allPosts = Post::all();
+$allPosts = Post::all();
 dd($allPosts);
 
 Post::destroy(3,5,7);
