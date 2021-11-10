@@ -11,9 +11,9 @@ class Post extends Model
     //多餘，可省(會自動對應)
     protected $table = 'posts';
 
-    protected $fillable = [
+   /* protected $fillable = [
         'title',
         'content',
         'is_feature'
-    ];
+    ];*/
 }

@@ -22,13 +22,18 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$post = Post::find(1);
+$post=Post::find(1);
+$post->title='saved title';
+$post->content='saved content';
+$post->save();
+
+/*$post = Post::find(1);
 $post->update([
     'title' => 'updated title',
     'content' => 'updated content',
 ]);
 
-/*$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
+$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
 dd($posts);
 
 $posts=Post::find(1);
