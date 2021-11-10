@@ -22,9 +22,12 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-Post::destroy(2);
+Post::destroy(3,5,7);
 
-/*$post=Post::find(1);
+
+/*Post::destroy(2);
+
+$post=Post::find(1);
 $post->delete();
 
 $post=Post::find(1);
