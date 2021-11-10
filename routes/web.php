@@ -15,13 +15,17 @@ use App\Models\Post;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-    $post=new Post();
+   return view('welcome');
+    /* $post=new Post();
     $post->title='test title';
     $post->content='test content';
-    $post->save();
-
+    $post->save();*/
 });
+
+Post::create([
+    'title' => 'test title',
+    'content' => 'test content',
+]);
 /*
 Route::get('index', function () {
     return view('index');
