@@ -22,10 +22,13 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$posts=Post::find(1);
+$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
 dd($posts);
 
-/*$posts=Post::all();
+/*$posts=Post::find(1);
+dd($posts);
+
+$posts=Post::all();
 dd($posts);
 
 Post::create([
