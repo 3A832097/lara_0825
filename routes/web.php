@@ -22,11 +22,14 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-Post::create([
+$posts=Post::all();
+dd($posts);
+
+/*Post::create([
     'title' => 'test title',
     'content' => 'test content',
 ]);
-/*
+
 Route::get('index', function () {
     return view('index');
 });
