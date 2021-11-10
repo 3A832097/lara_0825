@@ -22,10 +22,13 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$posts=Post::all();
+$posts=Post::find(1);
 dd($posts);
 
-/*Post::create([
+/*$posts=Post::all();
+dd($posts);
+
+Post::create([
     'title' => 'test title',
     'content' => 'test content',
 ]);
