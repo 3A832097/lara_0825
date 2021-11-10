@@ -23,11 +23,14 @@ Route::get('/', function () {
 });
 
 $post=Post::find(1);
+$post->delete();
+
+/*$post=Post::find(1);
 $post->title='saved title';
 $post->content='saved content';
 $post->save();
 
-/*$post = Post::find(1);
+$post = Post::find(1);
 $post->update([
     'title' => 'updated title',
     'content' => 'updated content',
