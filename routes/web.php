@@ -22,10 +22,10 @@ Route::get('/', function () {
     $post->save();*/
 });
 
-$lastPost = Post::orderBy('id','DESC')->first();
+/*$lastPost = Post::orderBy('id','DESC')->first();
 dd($lastPost);
 
-/*$fourthPost = Post::find(4);
+$fourthPost = Post::find(4);
 dd($fourthPost);
 
 $featuredPosts = Post::where('is_feature',1)->get();
