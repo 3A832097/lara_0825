@@ -22,6 +22,12 @@ Route::get('/', function () {
     $post->save();*/
 });
 
+$post=Post::find(8);
+foreach ($post->comments as $comment)
+{
+    echo $comment->content.'<br>';
+}
+
 /*$lastPost = Post::orderBy('id','DESC')->first();
 dd($lastPost);
 
